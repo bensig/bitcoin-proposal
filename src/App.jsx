@@ -19,49 +19,59 @@ function App() {
 
   return (
     <div className="app">
-      <header>
-        <h1>Corporate Bitcoin Investment Proposal Generator</h1>
-        <p className="subtitle">Create a professional proposal letter for your company's board to consider investing in Bitcoin.</p>
-      </header>
-
-      <div className="instructions">
-        <h2>Getting Started</h2>
-        <p>To submit this proposal, you must meet ONE of the following SEC criteria:</p>
-        <ul>
-          <li>Own at least $2,000 in market value, or 1% of the company's shares</li>
-          <li>Have held these shares for at least 1 year before submission</li>
-        </ul>
-        <p>Follow these steps to generate your letter:</p>
-        <ol>
-          <li>Select your company from the list below</li>
-          <li>Fill in your contact information</li>
-          <li>Review your letter and download the PDF</li>
-        </ol>
+      <div className="wave-header-container">
+        <header className="wave-header">
+          <h1>Orange Wave</h1>
+          <p className="mission">Creating a wave of Bitcoin adoption across public markets</p>
+          <div className="manifesto">
+            <p>Every proposal must be voted on by public company boards.</p>
+            <p>Every vote creates awareness.</p>
+            <p>Every meeting plants a seed.</p>
+            <p>Together, we create the wave. 🌊</p>
+          </div>
+          <div className="wave-effect"></div>
+        </header>
       </div>
 
       <div className="content-container">
-        <section className="company-section">
+        <div className="instructions">
+          <h2>How It Works</h2>
+          <ol>
+            <li>Generate your proposal letter</li>
+            <li>Print, sign, and mail it</li>
+            <li>The board must vote on your proposal</li>
+            <li>Share your submission to amplify the wave</li>
+          </ol>
+          <div className="eligibility">
+            <h3>Eligibility Requirements</h3>
+            <p>To submit, you must meet ONE of these SEC criteria for more than 1 year before sending a proposal:</p>
+            <ul>
+              <li>Own $2,000+ in company shares</li>
+              <li>Own 1% of the company's securities</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div className="form-sections">
           <CompanySelector 
             onSelect={setSelectedCompany} 
             selectedCompany={selectedCompany} 
           />
-        </section>
-
-        <section className="user-section">
+          
           <UserForm 
             userData={userData} 
             setUserData={setUserData}
             errors={errors}
           />
-        </section>
+        </div>
 
         {selectedCompany && (
-          <section className="letter-section">
+          <div className="preview-section">
             <ProposalLetter 
               company={selectedCompany}
               userData={userData}
             />
-          </section>
+          </div>
         )}
       </div>
     </div>

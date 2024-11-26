@@ -1,3 +1,141 @@
+:root {
+  --bitcoin-orange: #f7931a;
+  --bitcoin-orange-light: #ffa533;
+  --bitcoin-orange-dark: #d97c16;
+}
+
+/* Reset margins and padding */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Sans', sans-serif;
+  background: #fafafa;
+  color: #2d2d2d;
+}
+
+.app {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Header styles */
+.wave-header-container {
+  width: 100vw;
+  background: var(--bitcoin-orange);
+  position: relative;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+
+.wave-header {
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mission {
+  font-size: 1.4rem;
+  margin: 1.5rem 0;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.manifesto {
+  max-width: 600px;
+  margin: 2rem auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.manifesto p {
+  margin: 0.5rem 0;
+}
+
+/* Content container for proper width */
+.content-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.instructions {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem auto;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.instructions h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 0;
+  color: var(--bitcoin-orange);
+  letter-spacing: -0.02em;
+}
+
+.instructions ol {
+  margin: 1.5rem 0;
+  padding-left: 1.2rem;
+}
+
+.instructions li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Update button styles */
+.download-button {
+  background: var(--bitcoin-orange);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.download-button:hover {
+  background: var(--bitcoin-orange-dark);
+  transform: translateY(-1px);
+}
+
+/* Wave effect update */
+.wave-effect {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23fafafa' fill-opacity='1' d='M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+  background-size: cover;
+}
+
+.wave-effect::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  animation: wave 3s infinite linear;
+}
+
 .app {
   max-width: 800px;
   margin: 0 auto;
