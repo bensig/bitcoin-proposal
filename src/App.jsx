@@ -21,7 +21,7 @@ function App() {
     <div className="app">
       <div className="wave-header-container">
         <header className="wave-header">
-          <h1>Orange Wave</h1>
+          <h1>OrangeWave.xyz</h1>
           <p className="mission">Creating a wave of Bitcoin adoption across public markets</p>
           <div className="manifesto">
             <p>Every proposal must be voted on by public company boards.</p>
