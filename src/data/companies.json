@@ -1,0 +1,162 @@
+[
+  {
+    "symbol": "AAPL",
+    "name": "Apple Inc.",
+    "address": "One Apple Park Way",
+    "city": "Cupertino",
+    "state": "CA",
+    "zip": "95014"
+  },
+  {
+    "symbol": "MSFT",
+    "name": "Microsoft Corporation",
+    "address": "One Microsoft Way",
+    "city": "Redmond",
+    "state": "WA",
+    "zip": "98052"
+  },
+  {
+    "symbol": "GOOGL",
+    "name": "Alphabet Inc.",
+    "address": "1600 Amphitheatre Parkway",
+    "city": "Mountain View",
+    "state": "CA",
+    "zip": "94043"
+  },
+  {
+    "symbol": "AMZN",
+    "name": "Amazon.com Inc.",
+    "address": "410 Terry Avenue North",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98109"
+  },
+  {
+    "symbol": "NVDA",
+    "name": "NVIDIA Corporation",
+    "address": "2788 San Tomas Expressway",
+    "city": "Santa Clara",
+    "state": "CA",
+    "zip": "95051"
+  },
+  {
+    "symbol": "META",
+    "name": "Meta Platforms Inc.",
+    "address": "1 Hacker Way",
+    "city": "Menlo Park",
+    "state": "CA",
+    "zip": "94025"
+  },
+  {
+    "symbol": "BRK.A",
+    "name": "Berkshire Hathaway Inc.",
+    "address": "3555 Farnam Street",
+    "city": "Omaha",
+    "state": "NE",
+    "zip": "68131"
+  },
+  {
+    "symbol": "TSLA",
+    "name": "Tesla Inc.",
+    "address": "13101 Tesla Road",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78725"
+  },
+  {
+    "symbol": "UNH",
+    "name": "UnitedHealth Group Inc.",
+    "address": "9900 Bren Road East",
+    "city": "Minnetonka",
+    "state": "MN",
+    "zip": "55343"
+  },
+  {
+    "symbol": "JNJ",
+    "name": "Johnson & Johnson",
+    "address": "One Johnson & Johnson Plaza",
+    "city": "New Brunswick",
+    "state": "NJ",
+    "zip": "08933"
+  },
+  {
+    "symbol": "JPM",
+    "name": "JPMorgan Chase & Co.",
+    "address": "383 Madison Avenue",
+    "city": "New York",
+    "state": "NY",
+    "zip": "10179"
+  },
+  {
+    "symbol": "V",
+    "name": "Visa Inc.",
+    "address": "P.O. Box 8999",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94128"
+  },
+  {
+    "symbol": "PG",
+    "name": "Procter & Gamble Co.",
+    "address": "1 Procter & Gamble Plaza",
+    "city": "Cincinnati",
+    "state": "OH",
+    "zip": "45202"
+  },
+  {
+    "symbol": "MA",
+    "name": "Mastercard Inc.",
+    "address": "2000 Purchase Street",
+    "city": "Purchase",
+    "state": "NY",
+    "zip": "10577"
+  },
+  {
+    "symbol": "HD",
+    "name": "The Home Depot Inc.",
+    "address": "2455 Paces Ferry Road",
+    "city": "Atlanta",
+    "state": "GA",
+    "zip": "30339"
+  },
+  {
+    "symbol": "CVX",
+    "name": "Chevron Corporation",
+    "address": "6001 Bollinger Canyon Road",
+    "city": "San Ramon",
+    "state": "CA",
+    "zip": "94583"
+  },
+  {
+    "symbol": "AVGO",
+    "name": "Broadcom Inc.",
+    "address": "1320 Ridder Park Drive",
+    "city": "San Jose",
+    "state": "CA",
+    "zip": "95131"
+  },
+  {
+    "symbol": "XOM",
+    "name": "Exxon Mobil Corporation",
+    "address": "5959 Las Colinas Boulevard",
+    "city": "Irving",
+    "state": "TX",
+    "zip": "75039"
+  },
+  {
+    "symbol": "COST",
+    "name": "Costco Wholesale Corporation",
+    "address": "999 Lake Drive",
+    "city": "Issaquah",
+    "state": "WA",
+    "zip": "98027"
+  },
+  {
+    "symbol": "ABBV",
+    "name": "AbbVie Inc.",
+    "address": "1 North Waukegan Road",
+    "city": "North Chicago",
+    "state": "IL",
+    "zip": "60064"
+  }
+] 

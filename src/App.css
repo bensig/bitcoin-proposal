@@ -1,0 +1,638 @@
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  color: #6c757d;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.instructions {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border: 1px solid #e9ecef;
+}
+
+.instructions h2 {
+  color: #2196f3;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.instructions ul,
+.instructions ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.instructions li {
+  margin-bottom: 0.5rem;
+  color: #495057;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.company-section,
+.user-section,
+.letter-section {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Remove the mode toggle styles since we're not using them anymore */
+
+.form-container {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.company-selector,
+.user-form {
+  flex: 1;
+  padding: 1rem;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.companies-list {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 1rem;
+}
+
+.company-item {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.company-item:hover {
+  background: #eee;
+}
+
+.company-item.selected {
+  background: #e3f2fd;
+  border-color: #2196f3;
+}
+
+.preview-container {
+  padding: 2rem;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.letter {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.letter h2 {
+  color: #2196f3;
+  margin: 0;
+}
+
+.letter-content {
+  background: white;
+  border: none;
+  border-radius: 0;
+  width: 8.5in;
+  margin: 0 auto;
+}
+
+.letter-actions {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.download-button {
+  width: 100%;
+  padding: 1rem;
+  background: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.download-button:hover {
+  background: #1976d2;
+}
+
+.letter strong {
+  font-weight: bold;
+}
+
+.references {
+  margin-top: 0.2in;
+  margin-bottom: 0.3in;
+  page-break-before: always;
+}
+
+.references strong {
+  margin-bottom: 0.1in;
+  display: block;
+}
+
+.references ol {
+  padding-left: 1.5rem;
+}
+
+.references li {
+  margin-bottom: 0.5rem;
+}
+
+.letter a {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.letter a:hover {
+  text-decoration: underline;
+}
+
+.signature-block {
+  margin-top: 2rem;
+}
+
+.download-button {
+  position: sticky;
+  top: 1rem;
+  background: #2196f3;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.download-button:hover {
+  background: #1976d2;
+}
+
+/* Form Validation Styles */
+.form-control.error {
+  border-color: #dc3545;
+  background-color: #fff8f8;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+label::after {
+  content: " *";
+  color: #dc3545;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+input:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Status message styles */
+.status-message {
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+.status-message.error {
+  background: #ffebee;
+  color: #c62828;
+  border: 1px solid #ffcdd2;
+}
+
+.status-message.warning {
+  background: #fff3e0;
+  color: #ef6c00;
+  border: 1px solid #ffe0b2;
+}
+
+/* Animation for mode switching */
+.form-container,
+.preview-container {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* PDF Export Styles */
+@media print {
+  .letter-actions {
+    display: none;
+  }
+
+  .letter-content {
+    padding: 40px;
+    font-size: 12pt;
+  }
+
+  .letter {
+    background: white;
+    color: black;
+  }
+
+  /* Ensure page breaks don't occur in the middle of sections */
+  .letter-section {
+    page-break-inside: avoid;
+  }
+
+  .signature-block {
+    page-break-inside: avoid;
+  }
+
+  .references {
+    page-break-before: always;
+  }
+
+  /* Hide any other UI elements */
+  .mode-toggle,
+  .form-container,
+  header {
+    display: none;
+  }
+
+  .pdf-content {
+    padding: 1in;
+  }
+  
+  /* Second page specific margin */
+  .references {
+    margin-top: -0.5in;
+  }
+  
+  .references ol {
+    margin-top: 0.15in;
+  }
+  
+  /* Ensure signature stays together */
+  .signature-section {
+    page-break-inside: avoid;
+  }
+}
+
+/* Download button styling */
+.letter-actions {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: white;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.download-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  background: #2196f3;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.download-button:hover {
+  background: #1976d2;
+  transform: translateY(-1px);
+}
+
+.download-button:active {
+  transform: translateY(0);
+}
+
+/* Loading state for PDF generation */
+.download-button.loading {
+  background: #90caf9;
+  cursor: wait;
+}
+
+/* Success animation */
+@keyframes successPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.download-button.success {
+  background: #4caf50;
+  animation: successPulse 0.3s ease-in-out;
+}
+
+.test-controls {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.test-button {
+  background: #ff9800;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.test-button:hover {
+  background: #f57c00;
+}
+
+/* Add these new styles */
+.instructions {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border: 1px solid #e9ecef;
+}
+
+.instructions h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #2196f3;
+}
+
+.instructions ol {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.instructions li {
+  margin-bottom: 0.5rem;
+  color: #495057;
+}
+
+.subtitle {
+  color: #6c757d;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.mode-toggle {
+  margin-bottom: 2rem;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Update existing mode button styles */
+.mode-button {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border: 2px solid #2196f3;
+  background: white;
+  color: #2196f3;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin: 0 0.5rem;
+}
+
+.mode-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.mode-button.active {
+  background: #2196f3;
+  color: white;
+}
+
+/* PDF-specific styles */
+.pdf-content {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 11pt;
+  line-height: 1.2;
+  padding: 1in;
+  padding-top: 0.75in;
+  max-width: 8.5in;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.sender-info {
+  margin-bottom: 0.2in;
+}
+
+.date {
+  margin-bottom: 0.2in;
+}
+
+.recipient-info {
+  margin-bottom: 0.2in;
+}
+
+.subject {
+  margin: 0.2in 0;
+}
+
+.letter-body p {
+  margin: 0.2in 0;
+}
+
+.signature {
+  margin-top: 1em;
+}
+
+/* Signature styles */
+.signature-section {
+  margin-top: 0.5in;
+}
+
+.signature-line {
+  margin-top: 0.3in;
+  position: relative;
+}
+
+.line {
+  font-size: 12pt;
+  color: #000;
+}
+
+.signature-name, 
+.signature-date {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-size: 10pt;
+  margin-top: 0.1in;
+}
+
+.shareholder-title {
+  margin-top: 0.4in;
+}
+
+/* Print styles */
+@media print {
+  .pdf-content {
+    padding: 1in;
+    width: 8.5in;
+    margin: 0;
+  }
+  
+  .letter-actions {
+    display: none;
+  }
+}
+
+/* Page break styles */
+.page-break {
+  page-break-before: always;
+  margin-top: -0.5in; /* Reduce top margin on second page */
+}
+
+/* References section styles */
+.references {
+  margin-top: 0.3in;
+  margin-bottom: 0.3in;
+}
+
+.references strong {
+  display: block;
+  margin-bottom: 0.15in;
+}
+
+.references ol {
+  margin-top: 0.15in;
+  padding-left: 0.3in;
+}
+
+.references li {
+  margin-bottom: 0.1in;
+  font-size: 10pt;
+  line-height: 1.2;
+}
+
+@media print {
+  .pdf-content {
+    padding: 1in;
+  }
+  
+  /* Ensure signature stays together */
+  .signature-section {
+    page-break-inside: avoid;
+  }
+}
+
+.resolved-section {
+  margin-bottom: 0.3in; /* Add space after resolved section */
+}
+
+.page-break {
+  page-break-before: always;
+  margin-top: 0.5in; /* Adjust top margin of second page */
+}
+
+.thank-you {
+  margin-top: 1.5in; /* Even more space at top of second page */
+  margin-bottom: 0.3in; /* Add some space before References */
+} 
