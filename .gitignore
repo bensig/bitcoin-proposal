@@ -22,3 +22,7 @@ yarn-error.log*
 # Editor directories
 .idea
 .vscode
+
+# Local Netlify folder
+.netlify
+netlify.toml
